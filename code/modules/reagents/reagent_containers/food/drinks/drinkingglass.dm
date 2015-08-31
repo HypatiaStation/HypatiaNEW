@@ -443,6 +443,70 @@
 					icon_state = "icedteaglass"
 					name = "Iced Tea"
 					desc = "No relation to a certain rap artist/ actor."
+				if("applejuice")
+					icon_state = "applejuice"
+					name = "Glass of apple juice"
+					desc = "Morning Glory!"
+				if("gingerjuice")
+					icon_state = "gingerjuice"
+					name = "Glass of ginger juice"
+					desc = "Why in the name of space jesus would you drink this!"
+				if("strawberryjuice")
+					icon_state = "strawberryjuice"
+					name = "Glass of strawberry juice"
+					desc = "Reminds you of summer!"
+				if("strawberrymilkshake")
+					icon_state = "strawberrymilkshake"
+					name = "Strawberry Milkshake"
+					desc = "Glorious brainfreezing mixture now with hints of strawberry!."
+				if("bananamilkshake")
+					icon_state = "bananamilkshake"
+					name = "Banana Milkshake"
+					desc = "Glorious brainfreezing mixture now with hints of banana!."
+				if("orangemilkshake")
+					icon_state = "orangemilkshake"
+					name = "Orange Milkshake"
+					desc = "Glorious brainfreezing mixture now with hints of orange!."
+				if("limemilkshake")
+					icon_state = "limemilkshake"
+					name = "Lime Milkshake"
+					desc = "Glorious brainfreezing mixture now with hints of lime!."
+				if("watermelonmilkshake")
+					icon_state = "watermelonmilkshake"
+					name = "Watermelon Milkshake"
+					desc = "Glorious brainfreezing mixture now with hints of watermelon!."
+				if("tomatomilkshake")
+					icon_state = "tomatomilkshake"
+					name = "Tomato Milkshake"
+					desc = "The Bloody Marys distant cousin!."
+				if("lemonmilkshake")
+					icon_state = "lemonmilkshake"
+					name = "Lemon Milkshake"
+					desc = "Glorious brainfreezing mixture now with hints of zest!."
+				if("gingermilkshake")
+					icon_state = "gingermilkshake"
+					name = "Ginger Milkshake"
+					desc = "Glorious brainfreezing mixture now with hints of ginger... what!."
+				if("chocolatemilkshake")
+					icon_state = "chocolatemilkshake"
+					name = "Chocolate Milkshake"
+					desc = "Glorious brainfreezing mixture now with hints of chocolate!."
+				if("berrymilkshake")
+					icon_state = "berrymilkshake"
+					name = "Berry Milkshake"
+					desc = "Very Berry good!."
+				if("grapemilkshake")
+					icon_state = "grapemilkshake"
+					name = "Grape Milkshake"
+					desc = "Glorious brainfreezing mixture I heard off the grapevine its pretty good!."
+				if("grenadinemilkshake")
+					icon_state = "grenadinemilkshake"
+					name = "Grenadine Milkshake"
+					desc = "Glorious brainfreezing mixture its so sweet its like puppys covered in diabetes!."
+				if("potatomilkshake")
+					icon_state = "potatomilkshake"
+					name = "Potato Milkshake"
+					desc = "Space jesus christ why would anyone drink this whats wrong with you!."
 				if("grenadine")
 					icon_state = "grenadineglass"
 					name = "Glass of grenadine syrup"

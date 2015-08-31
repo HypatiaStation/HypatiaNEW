@@ -2782,6 +2782,24 @@ datum
 			description = "It's grrrrrape!"
 			color = "#863333" // rgb: 134, 51, 51
 
+		drink/strawberryjuice
+			name = "Strawberry Juice"
+			id = "strawberryjuice"
+			description = "Like summer attacked your tastebuds."
+			color = "#f23616" // rgb: 175, 0, 0
+
+		drink/applejuice
+			name = "Apple Juice"
+			id = "applejuice"
+			description = "Morning Glory"
+			color = "#ddad76" // rgb: 175, 0, 0
+
+		drink/gingerjuice
+			name = "Ginger Juice"
+			id = "gingerjuice"
+			description = "Why would you ever drink this space jesus christ."
+			color = "#CC6633" // rgb: 175, 0, 0
+
 		drink/grapesoda
 			name = "Grape Soda"
 			id = "grapesoda"
@@ -3048,6 +3066,286 @@ datum
 			description = "Glorious brainfreezing mixture."
 			id = "milkshake"
 			color = "#AEE5E4" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/strawberrymilkshake
+			name = "Strawberry Milkshake"
+			description = "Glorious brainfreezing mixture now with hints of strawberry!"
+			id = "strawberrymilkshake"
+			color = "#ffd1dc" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/bananamilkshake
+			name = "Banana Milkshake"
+			description = "Glorious brainfreezing mixture now with hints of banana!"
+			id = "bananamilkshake"
+			color = "#fdfd96" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/orangemilkshake
+			name = "Orange Milkshake"
+			description = "Glorious brainfreezing mixture now with hints of orange!"
+			id = "orangemilkshake"
+			color = "#fdca96" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/limemilkshake
+			name = "Lime Milkshake"
+			description = "Glorious brainfreezing mixture now with hints of lime!"
+			id = "limemilkshake"
+			color = "#cafd96" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/watermelonmilkshake
+			name = "Watermelon Milkshake"
+			description = "Glorious brainfreezing mixture now with hints of watermelon!"
+			id = "watermelonmilkshake"
+			color = "#ff6181" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/tomatomilkshake
+			name = "Tomato Milkshake"
+			description = "The distant cousin of the Bloody Mary."
+			id = "tomatomilkshake"
+			color = "#ff5148" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/lemonmilkshake
+			name = "Lemon Milkshake"
+			description = "Glorious brainfreezing mixture now with a citrus twist!"
+			id = "lemonmilkshake"
+			color = "#f6ff48" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/gingermilkshake
+			name = "Ginger Milkshake"
+			description = "Glorious brainfreezing mixture but oh god the flavour."
+			id = "gingermilkshake"
+			color = "#ffb862" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/chocolatemilkshake
+			name = "chocolate Milkshake"
+			description = "Glorious brainfreezing mixture AND ITS CHOCOLATE!"
+			id = "chocolatemilkshake"
+			color = "#8b4513" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/berrymilkshake
+			name = "Berry Milkshake"
+			description = "Very Berry good!"
+			id = "berrymilkshake"
+			color = "#ff00d5" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/grapemilkshake
+			name = "Grape Milkshake"
+			description = "Glorious brainfreezing mixture I heard off the grapevine its pretty good!"
+			id = "grapemilkshake"
+			color = "#ff00d5" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/grenadinemilkshake
+			name = "Grenadine Milkshake"
+			description = "Glorious brainfreezing mixture its so sweet its like puppys covered in diabetes!"
+			id = "grenadinemilkshake"
+			color = "#f45c86" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/potatomilkshake
+			name = "Potato Milkshake"
+			description = "I don't think any amount of credits could make you drink this."
+			id = "potatomilkshake"
+			color = "#ffe1a4" // rgb" 174, 229, 228
+			adj_temp = -9
+
+			on_mob_life(var/mob/living/M as mob)
+				if(!M)
+					M = holder.my_atom
+				if(prob(1))
+					M.emote("shiver")
+				M.bodytemperature = max(M.bodytemperature - 10 * TEMPERATURE_DAMAGE_COEFFICIENT, 0)
+				if(istype(M, /mob/living/carbon/slime))
+					M.bodytemperature = max(M.bodytemperature - rand(10,20), 0)
+				holder.remove_reagent("capsaicin", 5)
+				holder.remove_reagent(src.id, FOOD_METABOLISM)
+				..()
+				return
+
+		drink/cold/applemilkshake
+			name = "Apple Milkshake"
+			description = "Stone cold Doctor killer."
+			id = "applemilkshake"
+			color = "#98fb98" // rgb" 174, 229, 228
 			adj_temp = -9
 
 			on_mob_life(var/mob/living/M as mob)
