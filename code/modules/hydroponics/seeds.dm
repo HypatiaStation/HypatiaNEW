@@ -86,6 +86,12 @@
 /obj/item/seeds/berryseed
 	seed_type = "berries"
 
+/obj/item/seeds/strawberryseed
+	seed_type = "strawberry"
+
+/obj/item/seeds/gingerseed
+	seed_type = "ginger"
+
 /obj/item/seeds/glowberryseed
 	seed_type = "glowberries"
 

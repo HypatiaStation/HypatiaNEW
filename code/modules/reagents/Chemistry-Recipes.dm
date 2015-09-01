@@ -2313,6 +2313,90 @@ datum
 			required_reagents = list("cream" = 1, "ice" = 2, "milk" = 2)
 			result_amount = 5
 
+		strawberrymilkshake
+			name = "Strawberry Milkshake"
+			id = "strawberrymilkshake"
+			result = "strawberrymilkshake"
+			required_reagents = list("strawberryjuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		bananamilkshake
+			name = "Banana Milkshake"
+			id = "bananamilkshake"
+			result = "bananamilkshake"
+			required_reagents = list("bananajuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		orangemilkshake
+			name = "Orange Milkshake"
+			id = "orangemilkshake"
+			result = "orangemilkshake"
+			required_reagents = list("orangejuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		limemilkshake
+			name = "Lime Milkshake"
+			id = "limemilkshake"
+			result = "limemilkshake"
+			required_reagents = list("limejuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		watermelonmilkshake
+			name = "Watermelon Milkshake"
+			id = "watermelonmilkshake"
+			result = "watermelonmilkshake"
+			required_reagents = list("watermelonjuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		tomatomilkshake
+			name = "Tomato Milkshake"
+			id = "tomatomilkshake"
+			result = "tomatomilkshake"
+			required_reagents = list("tomatojuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		lemonmilkshake
+			name = "Lemon Milkshake"
+			id = "lemonmilkshake"
+			result = "lemonmilkshake"
+			required_reagents = list("lemonjuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		gingermilkshake
+			name = "Ginger Milkshake"
+			id = "gingermilkshake"
+			result = "gingermilkshake"
+			required_reagents = list("gingerjuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		berrymilkshake
+			name = "Berry Milkshake"
+			id = "berrymilkshake"
+			result = "berrymilkshake"
+			required_reagents = list("berryjuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		grapemilkshake
+			name = "Grape Milkshake"
+			id = "grapemilkshake"
+			result = "grapemilkshake"
+			required_reagents = list("grapejuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		grenadinemilkshake
+			name = "Grenadine Milkshake"
+			id = "grenadinemilkshake"
+			result = "grenadinemilkshake"
+			required_reagents = list("grenadine" = 1, "milkshake" = 2)
+			result_amount = 3
+
+		potatomilkshake
+			name = "Potato Milkshake"
+			id = "potatomilkshake"
+			result = "potatomilkshake"
+			required_reagents = list("potatojuice" = 1, "milkshake" = 2)
+			result_amount = 3
+
 		rewriter
 			name = "Rewriter"
 			id = "rewriter"
