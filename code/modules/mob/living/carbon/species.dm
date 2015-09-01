@@ -122,14 +122,14 @@
 	//If you wanted to add a species-level ability:
 	/*abilities = list(/client/proc/test_ability)*/
 
-/datum/species/soghun
-	name = "Soghun"
+/datum/species/unathi
+	name = "Unathi"
 	icobase = 'icons/mob/human_races/r_lizard.dmi'
 	deform = 'icons/mob/human_races/r_def_lizard.dmi'
-	language = "Sinta'soghun"
+	language = "Sinta'unathi"
 	tail = "sogtail"
 	unarmed_type = /datum/unarmed_attack/claws
-	primitive = /mob/living/carbon/monkey/soghun
+	primitive = /mob/living/carbon/monkey/unathi
 	darksight = 3
 
 	cold_level_1 = 280 //Default 260 - Lower is better
@@ -144,7 +144,7 @@
 
 	flesh_color = "#34AF10"
 
-	reagent_tag = IS_SOGHUN
+	reagent_tag = IS_UNATHI
 	base_color = "#066000"
 
 /datum/species/tajaran

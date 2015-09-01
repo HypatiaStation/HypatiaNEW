@@ -331,11 +331,11 @@
 	return ..()
 
 //If it's a hatchet it goes here. I guess
-/obj/item/weapon/hatchet/soghunknife
+/obj/item/weapon/hatchet/unathiknife
 	name = "duelling knife"
 	desc = "A length of leather-bound wood studded with razor-sharp teeth. How crude."
 	icon = 'icons/obj/weapons.dmi'
-	icon_state = "soghunknife"
+	icon_state = "unathiknife"
 	attack_verb = list("ripped", "torn", "cut")
 
 /obj/item/weapon/scythe

@@ -31,8 +31,8 @@
 		H.equip_to_slot_or_del(new /obj/item/device/pda/heads/hos(H), slot_belt)
 		if(H.species.name == "Tajaran")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/tajara(H), slot_gloves)
-		if(H.species.name == "Soghun")
-			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/soghun(H), slot_gloves)
+		if(H.species.name == "Unathi")
+			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/unathi(H), slot_gloves)
 		else
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
 //		H.equip_to_slot_or_del(new /obj/item/clothing/mask/gas(H), slot_wear_mask) //Grab one from the armory you donk
@@ -79,8 +79,8 @@
 		H.equip_to_slot_or_del(new /obj/item/device/pda/warden(H), slot_belt)
 		if(H.species.name == "Tajaran")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/tajara(H), slot_gloves)
-		if(H.species.name == "Soghun")
-			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/soghun(H), slot_gloves)
+		if(H.species.name == "Unathi")
+			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/unathi(H), slot_gloves)
 		else
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
 		H.equip_to_slot_or_del(new /obj/item/clothing/glasses/sunglasses/sechud(H), slot_glasses)
@@ -125,8 +125,8 @@
 		H.equip_to_slot_or_del(CIG, slot_wear_mask)	*/
 		if(H.species.name == "Tajaran")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/tajara(H), slot_gloves)
-		if(H.species.name == "Soghun")
-			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/soghun(H), slot_gloves)
+		if(H.species.name == "Unathi")
+			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/unathi(H), slot_gloves)
 		else
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
 		H.equip_to_slot_or_del(new /obj/item/clothing/suit/storage/det_suit(H), slot_wear_suit)
@@ -170,8 +170,8 @@
 		H.equip_to_slot_or_del(CIG, slot_wear_mask)	*/
 		if(H.species.name == "Tajaran")
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/tajara(H), slot_gloves)
-		if(H.species.name == "Soghun")
-			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/soghun(H), slot_gloves)
+		if(H.species.name == "Unathi")
+			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black/unathi(H), slot_gloves)
 		else
 			H.equip_to_slot_or_del(new /obj/item/clothing/gloves/black(H), slot_gloves)
 		if(H.mind.role_alt_title && H.mind.role_alt_title == "Crime Scene Investigator")

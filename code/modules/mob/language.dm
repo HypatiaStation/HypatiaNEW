@@ -13,7 +13,7 @@
 	var/whisper_verb                 // Optional. When not specified speech_verb + quietly/softly is used instead.
 	var/signlang_verb = list()       // list of emotes that might be displayed if this language has NONVERBAL or SIGNLANG flags
 	var/colour = "body"              // CSS style to use for strings in this language.
-	var/key = "x"                    // Character used to speak in language eg. :o for Soghun.
+	var/key = "x"                    // Character used to speak in language eg. :o for Unathi.
 	var/flags = 0                    // Various language flags.
 	var/native                       // If set, non-native speakers will have trouble speaking.
 	var/list/syllables               // Used when scrambling text for a non-speaker.
@@ -140,19 +140,19 @@
 	// if you make a loud noise (screams etc), you'll be heard from 4 tiles over instead of two
 	return (copytext(message, length(message)) == "!") ? 4 : 2
 
-/datum/language/soghun
-	name = "Sinta'soghun"
-	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Soghun."
+/datum/language/unathi
+	name = "Sinta'unathi"
+	desc = "The common language of Moghes, composed of sibilant hisses and rattles. Spoken natively by Unathi."
 	speech_verb = "hisses"
 	ask_verb = "hisses"
 	exclaim_verb = "roars"
-	colour = "soghun"
+	colour = "unathi"
 	key = "o"
 	flags = WHITELISTED
 	syllables = list("ss","ss","ss","ss","skak","seeki","resh","las","esi","kor","sh","oss","traat","khiss","voht", \
 	"ghas","tiss","thuus","stos","sso","saa","sch","esh","ets","kass","hoss","huf")
 
-/datum/language/soghun/get_random_name()
+/datum/language/unathi/get_random_name()
 
 	var/new_name = ..()
 	while(findtextEx(new_name,"sss",1,null))
@@ -242,7 +242,7 @@
 	speech_verb = "creaks and rustles"
 	ask_verb = "creaks"
 	exclaim_verb = "rustles"
-	colour = "soghun"
+	colour = "unathi"
 	key = "q"
 	flags = RESTRICTED
 	syllables = list("hs","zt","kr","st","sh")

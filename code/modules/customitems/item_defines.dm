@@ -1148,13 +1148,13 @@ END R I P HAZERI
 		if(isliving(user))
 			user.visible_message("\red [user] invades [M]'s personal space, thrusting your [src] into their face insistently.","\red You invade [M]'s personal space, thrusting [src] into their face insistently. You are the law.")
 
-/obj/item/clothing/gloves/fluff/odanu_gloves //Old Soghun Handwraps - Odanu Adanutha - Prospekt1559
-	name = "old Soghun handwraps"
+/obj/item/clothing/gloves/fluff/odanu_gloves //Old Unathi Handwraps - Odanu Adanutha - Prospekt1559
+	name = "old Unathi handwraps"
 	desc = "Old, stained hand wraps made of cloth. Holds in a miniscule amount of warmth and offers slight protection to one's knuckles."
 	icon = 'icons/obj/custom_items/odanu_gloves.dmi'
 	icon_state = "odanu_gloves"
 	contained_sprite = 1
-	species_restricted = list("Soghun")
+	species_restricted = list("Unathi")
 	clipped = 1
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE

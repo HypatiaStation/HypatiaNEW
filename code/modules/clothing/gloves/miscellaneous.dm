@@ -53,10 +53,10 @@
 	cmo
 		item_color = "medical"		//Exists for washing machines. Is not different from latex gloves in any way.
 
-/obj/item/clothing/gloves/latex/soghun
-	name = "soghun latex gloves"
-	desc = "Sterile latex gloves. Designed for Soghun use."
-	species_restricted = list("Soghun")
+/obj/item/clothing/gloves/latex/unathi
+	name = "unathi latex gloves"
+	desc = "Sterile latex gloves. Designed for Unathi use."
+	species_restricted = list("Unathi")
 
 /obj/item/clothing/gloves/latex/tajara
 	name = "tajara latex gloves"
