@@ -16,12 +16,12 @@
 	//Species-specific stuff.
 	species_restricted = list("exclude","unathi","Tajaran","Skrell","Diona","Vox")
 	sprite_sheets_refit = list(
-		"unathi" = 'icons/mob/species/unathi/helmet.dmi',
+		"unathi" = 'icons/mob/species/soghun/helmet.dmi',
 		"Tajaran" = 'icons/mob/species/tajaran/helmet.dmi',
 		"Skrell" = 'icons/mob/species/skrell/helmet.dmi',
 		)
 	sprite_sheets_obj = list(
-		"unathi" = 'icons/obj/clothing/species/unathi/hats.dmi',
+		"unathi" = 'icons/obj/clothing/species/soghun/hats.dmi',
 		"Tajaran" = 'icons/obj/clothing/species/tajaran/hats.dmi',
 		"Skrell" = 'icons/obj/clothing/species/skrell/hats.dmi',
 		)
@@ -66,12 +66,12 @@
 
 	species_restricted = list("exclude","unathi","Tajaran","Diona","Vox")
 	sprite_sheets_refit = list(
-		"unathi" = 'icons/mob/species/unathi/suit.dmi',
+		"unathi" = 'icons/mob/species/soghun/suit.dmi',
 		"Tajaran" = 'icons/mob/species/tajaran/suit.dmi',
 		"Skrell" = 'icons/mob/species/skrell/suit.dmi',
 		)
 	sprite_sheets_obj = list(
-		"unathi" = 'icons/obj/clothing/species/unathi/suits.dmi',
+		"unathi" = 'icons/obj/clothing/species/soghun/suits.dmi',
 		"Tajaran" = 'icons/obj/clothing/species/tajaran/suits.dmi',
 		"Skrell" = 'icons/obj/clothing/species/skrell/suits.dmi',
 		)
