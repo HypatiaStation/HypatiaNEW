@@ -326,32 +326,6 @@
 			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H.back), slot_in_backpack)
 		return 1
 
-/datum/job/entertainer
-	title = "Entertainer"
-	flag = ENTERTAINER
-	department_flag = CIVILIAN
-	faction = "Station"
-	total_positions = 2
-	spawn_positions = 2
-	supervisors = "the head of personnel"
-	selection_color = "#551A8B"
-	access = list(access_maint_tunnels, access_theatre)
-	minimal_access = list(access_maint_tunnels, access_theatre)
-	alt_titles = list("Singer","Musician","Actor","Comedian","Card Dealer")
-
-
-	equip(var/mob/living/carbon/human/H)
-		if(!H)	return 0
-		H.equip_to_slot_or_del(new /obj/item/clothing/under/waiter(H), slot_w_uniform)
-		H.equip_to_slot_or_del(new /obj/item/device/pda/cargo(H), slot_belt)
-		H.equip_to_slot_or_del(new /obj/item/clothing/shoes/black(H), slot_shoes)
-		if(H.backbag == 1)
-			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H), slot_r_hand)
-		else
-			H.equip_to_slot_or_del(new /obj/item/weapon/storage/box/survival(H.back), slot_in_backpack)
-		return 1
-
-
 
 
 //var/global/lawyer = 0//Checks for another lawyer //This changed clothes on 2nd lawyer, both IA get the same dreds.

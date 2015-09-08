@@ -246,8 +246,8 @@
 		var/race = synd_mob.species.name
 
 		switch(race)
-			if("unathi")
-				new_suit.species_restricted = list("unathi")
+			if("Soghun")
+				new_suit.species_restricted = list("Soghun")
 			if("Tajaran")
 				new_suit.species_restricted = list("Tajaran")
 			if("Skrell")

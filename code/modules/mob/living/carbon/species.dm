@@ -122,14 +122,14 @@
 	//If you wanted to add a species-level ability:
 	/*abilities = list(/client/proc/test_ability)*/
 
-/datum/species/unathi
-	name = "unathi"
+/datum/species/soghun
+	name = "Soghun"
 	icobase = 'icons/mob/human_races/r_lizard.dmi'
 	deform = 'icons/mob/human_races/r_def_lizard.dmi'
-	language = "Sinta'unathi"
+	language = "Sinta'soghun"
 	tail = "sogtail"
 	unarmed_type = /datum/unarmed_attack/claws
-	primitive = /mob/living/carbon/monkey/unathi
+	primitive = /mob/living/carbon/monkey/soghun
 	darksight = 3
 
 	cold_level_1 = 280 //Default 260 - Lower is better
@@ -144,36 +144,8 @@
 
 	flesh_color = "#34AF10"
 
-	reagent_tag = IS_unathi
+	reagent_tag = IS_SOGHUN
 	base_color = "#066000"
-
-/datum/species/obsedai
-	name = "Obsedai"
-	name_plural = "Obsedai"
-	icobase = 'icons/mob/human_races/r_obsedai.dmi'
-	language = "Tummese"
-	unarmed_types = list (/datum/unarmed_attack/obsedai)
-	total_health = 500
-	darksight = 8
-	slowdown = 8
-	brute_mod = 0.5
-	blurb = "This is a place holder intill a Obsedai loremin writes this."
-
-	cold_level_1 = -1 //Default 260
-	cold_level_2 = -1 //Default 200
-	cold_level_3 = -1 //Default 120
-
-	heat_level_1 = 4000 //Default 360
-	heat_level_2 = 5000 //Default 400
-	heat_level_3 = 5500 //Default 1000
-
-	primitive = /mob/living/carbon/monkey/tajara
-
-	flags = IS_WHITELISTED | NO_SLIP | NO_BREATHE | CAN_JOIN | IS_WHITELISTED | NO_POISON
-
-	warning_low_pressure = 50
-	hazard_low_pressure = -1
-
 
 /datum/species/tajaran
 	name = "Tajaran"

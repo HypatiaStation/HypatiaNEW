@@ -259,10 +259,6 @@
 					icon_state = "dr_gibb_glass"
 					name = "Glass of Dr. Gibb"
 					desc = "Dr. Gibb. Not as dangerous as the name might imply."
-				if("cherrycola")
-					icon_state = "dr_gibb_glass"
-					name = "Glass of Cherry Cola"
-					desc = "This is well worth the kidney stones!"
 				if("space_up")
 					icon_state = "space-up_glass"
 					name = "Glass of Space-up"
@@ -407,14 +403,6 @@
 					icon_state = "erikasurprise"
 					name = "Erika Surprise"
 					desc = "The surprise is, it's green!"
-				if("strawberry_daiquiri")
-					icon_state = "strawberry_daiquiri"
-					name = "Strawberry Daiquiri"
-					desc = "Fruity and delicious!"
-				if("watermelon_vodka")
-					icon_state = "watermelon_vodka"
-					name = "Watermelon Vodka"
-					desc = "College life distilled into one drink!"
 				if("driestmartini")
 					icon_state = "driestmartiniglass"
 					name = "Driest Martini"
@@ -519,10 +507,6 @@
 					icon_state = "potatomilkshake"
 					name = "Potato Milkshake"
 					desc = "Space jesus christ why would anyone drink this whats wrong with you!."
-				if("applemilkshake")
-					icon_state = "applemilkshake"
-					name = "Apple Milkshake"
-					desc = "Stone cold doctor killer!"
 				if("grenadine")
 					icon_state = "grenadineglass"
 					name = "Glass of grenadine syrup"
@@ -531,14 +515,6 @@
 					icon_state = "milkshake"
 					name = "Milkshake"
 					desc = "Glorious brainfreezing mixture."
-				if("gingerbeer")
-					icon_state = "gingerbeer"
-					name = "Ginger Beer"
-					desc = "Tangy!."
-				if("gingerale")
-					icon_state = "gingerale"
-					name = "Ginger Ale"
-					desc = "Ginger Beers big brother."
 				if("lemonade")
 					icon_state = "lemonadeglass"
 					name = "Lemonade"

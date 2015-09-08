@@ -81,7 +81,7 @@ datum/synthetic_limb_cover/fur
 datum/synthetic_limb_cover/scales
 	main_icon = 'icons/mob/human_races/r_lizard.dmi'
 	icon_key_type = "Scales"
-	hair_species = "unathi"
+	hair_species = "Soghun"
 	eyes_state="eyes_s"
 	tail = "sogtail"
 

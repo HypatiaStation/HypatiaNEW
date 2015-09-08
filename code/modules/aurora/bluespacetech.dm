@@ -91,7 +91,7 @@
 
 	//Add the rest of the languages
 	//Because universal speak doesn't work right.
-	bst.add_language("Sinta'unathi")
+	bst.add_language("Sinta'soghun")
 	bst.add_language("Siik'Maas")
 	bst.add_language("Skrellian")
 	bst.add_language("Vox-pidgin")
@@ -140,13 +140,11 @@
 			switch(species.name)
 				if("Tajaran")
 					bsc()
-				if("Obsedai")
-					bsc()
 				if("Machine")
 					bsb()
 				if("Diona")
 					bsd()
-				if("unathi")
+				if("Soghun")
 					bsu()
 				if("Skrell")
 					bss()
@@ -230,8 +228,8 @@
 			suicide()
 
 	proc/bsu()
-		if(set_species("unathi"))
-			h_style = "unathi Horns"
+		if(set_species("Soghun"))
+			h_style = "Soghun Horns"
 			name = "Bluespace Snake"
 			voice_name = "Bluespace Snake"
 			real_name = "Bluespace Snake"

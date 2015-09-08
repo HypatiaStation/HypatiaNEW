@@ -72,7 +72,7 @@
 			name = "mangled [name]"
 			desc = "[desc]<br>They have had the fingertips cut off of them."
 			if("exclude" in species_restricted)
-				species_restricted -= "unathi"
+				species_restricted -= "Soghun"
 				species_restricted -= "Tajaran"
 			return
 		else

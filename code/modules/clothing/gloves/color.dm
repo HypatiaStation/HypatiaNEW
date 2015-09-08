@@ -125,19 +125,19 @@
 	species_restricted = list("Tajaran")
 
 /obj/item/clothing/gloves/yellow/specialu
-	desc = "These gloves will protect the wearer from electric shock. Made special for unathi use"
-	name = "unathi electrical gloves"
+	desc = "These gloves will protect the wearer from electric shock. Made special for Soghun use"
+	name = "Soghun electrical gloves"
 	icon_state = "yellow"
 	item_state = "ygloves"
 	siemens_coefficient = 0
 	permeability_coefficient = 0.05
 	item_color="yellow"
-	species_restricted = list("unathi")
+	species_restricted = list("Soghun")
 
-/obj/item/clothing/gloves/black/unathi
+/obj/item/clothing/gloves/black/soghun
 	name = "black gloves"
-	desc = "black gloves made for unathi use."
-	species_restricted = list("unathi")
+	desc = "black gloves made for Soghun use."
+	species_restricted = list("Soghun")
 
 /obj/item/clothing/gloves/black/tajara
 	name = "black gloves"
