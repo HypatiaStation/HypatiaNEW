@@ -62,6 +62,12 @@
 	icon_state = "red"
 	item_color = "red"
 
+/obj/item/clothing/shoes/highheels
+	name = "Highheels"
+	desc = "Stylish red shoes."
+	icon_state = "highheels"
+	item_color = "highheels"
+
 /obj/item/clothing/shoes/white
 	name = "white shoes"
 	icon_state = "white"

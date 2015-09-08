@@ -1225,6 +1225,18 @@
 		reagents.add_reagent("sugar", 4)
 		bitesize = 2
 
+/obj/item/weapon/reagent_containers/food/snacks/scuttles
+	name = "Scuttles"
+	icon_state = "scuttles"
+	desc = "Taste the Spectrum!."
+	trash = /obj/item/trash/scuttlest
+	filling_color = "#9B30FF"
+
+	New()
+		..()
+		reagents.add_reagent("sugar", 6)
+		bitesize = 5
+
 /obj/item/weapon/reagent_containers/food/snacks/cheesiehonkers
 	name = "Cheesie Honkers"
 	icon_state = "cheesie_honkers"
@@ -1700,10 +1712,10 @@
 
 /obj/item/weapon/reagent_containers/food/snacks/monkeycube/stokcube
 	name = "stok cube"
-	monkey_type = /mob/living/carbon/monkey/soghun
+	monkey_type = /mob/living/carbon/monkey/unathi
 /obj/item/weapon/reagent_containers/food/snacks/monkeycube/wrapped/stokcube
 	name = "stok cube"
-	monkey_type =/mob/living/carbon/monkey/soghun
+	monkey_type =/mob/living/carbon/monkey/unathi
 
 /obj/item/weapon/reagent_containers/food/snacks/monkeycube/neaeracube
 	name = "neaera cube"

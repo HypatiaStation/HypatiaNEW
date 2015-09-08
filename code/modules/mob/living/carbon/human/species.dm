@@ -345,16 +345,16 @@ See code\modules\mob\new_player\preferences_setup.dm for where it's used.
 	//If you wanted to add a species-level ability:
 	/*abilities = list(/client/proc/test_ability)*/
 
-/datum/species/soghun
-	name = "Soghun"
-	name_plural = "Soghun"
+/datum/species/unathi
+	name = "unathi"
+	name_plural = "unathi"
 	icobase = 'icons/mob/human_races/r_lizard.dmi'
 	deform = 'icons/mob/human_races/r_def_lizard.dmi'
-	language = "Sinta'soghun"
+	language = "Sinta'unathi"
 	tail = "sogtail"
 	unarmed_type = /datum/unarmed_attack/claws
 	secondary_unarmed_type = /datum/unarmed_attack/bite/strong
-	primitive = /mob/living/carbon/monkey/soghun
+	primitive = /mob/living/carbon/monkey/unathi
 	darksight = 3
 	gluttonous = 1
 
@@ -370,7 +370,7 @@ See code\modules\mob\new_player\preferences_setup.dm for where it's used.
 
 	flesh_color = "#34AF10"
 
-	reagent_tag = IS_SOGHUN
+	reagent_tag = IS_unathi
 	base_color = "#066000"
 
 /datum/species/tajaran
@@ -397,6 +397,31 @@ See code\modules\mob\new_player\preferences_setup.dm for where it's used.
 
 	flesh_color = "#AFA59E"
 	base_color = "#333333"
+
+/datum/species/obsedai
+	name = "Obsedai"
+	name_plural = "Obsedai"
+	icobase = 'icons/mob/human_races/r_obsedai.dmi'
+	language = "Tummese"
+	total_health = 500
+	darksight = 8
+	slowdown = 8
+	brute_mod = 0.5
+
+	cold_level_1 = -1 //Default 260
+	cold_level_2 = -1 //Default 200
+	cold_level_3 = -1 //Default 120
+
+	heat_level_1 = 4000 //Default 360
+	heat_level_2 = 5000 //Default 400
+	heat_level_3 = 5500 //Default 1000
+
+	primitive = /mob/living/carbon/monkey/tajara
+
+	flags = IS_WHITELISTED | NO_SLIP | NO_BREATHE | IS_WHITELISTED | NO_POISON
+
+	warning_low_pressure = 50
+	hazard_low_pressure = -1
 
 /datum/species/skrell
 	name = "Skrell"

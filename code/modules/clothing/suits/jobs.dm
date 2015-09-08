@@ -29,6 +29,12 @@
 	body_parts_covered = UPPER_TORSO|LOWER_TORSO|LEGS|ARMS
 	flags_inv = HIDEJUMPSUIT
 
+/obj/item/clothing/suit/storage/hoodiered
+	name = "Red Hoodie"
+	desc = "Stylish warm and mysterious, the red ones sell the fastest"
+	icon_state = "hoodie_red"
+	item_state = "hoodie_red"
+
 //Chaplain
 /obj/item/clothing/suit/chaplain_hoodie
 	name = "chaplain hoodie"
