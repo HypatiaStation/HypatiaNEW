@@ -24,6 +24,9 @@
 	sosjerky
 		name = "Scaredy's Private Reserve Beef Jerky"
 		icon_state = "sosjerky"
+	scuttlest
+		name = "Scuttles"
+		icon_state = "scuttlest"
 	syndi_cakes
 		name = "Syndi cakes"
 		icon_state = "syndi_cakes"

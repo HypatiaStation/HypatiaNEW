@@ -1267,9 +1267,9 @@ var/list/all_supply_groups = list("Operations","Security","Hospitality","Enginee
 
 /datum/supply_packs/alienmedicalgloves
 	name = "Non-Human Sterile Glove Kit"
-	contains = list(/obj/item/clothing/gloves/latex/soghun,
-					/obj/item/clothing/gloves/latex/soghun,
-					/obj/item/clothing/gloves/latex/soghun,
+	contains = list(/obj/item/clothing/gloves/latex/unathi,
+					/obj/item/clothing/gloves/latex/unathi,
+					/obj/item/clothing/gloves/latex/unathi,
 					/obj/item/clothing/gloves/latex/tajara,
 					/obj/item/clothing/gloves/latex/tajara,
 					/obj/item/clothing/gloves/latex/tajara)

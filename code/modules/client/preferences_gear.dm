@@ -298,6 +298,12 @@ proc/populate_gear_list()
 	cost = 2
 //	slot = slot_shoes
 
+/datum/gear/hoodiered
+	display_name = "red hoodie"
+	path = /obj/item/clothing/suit/storage/hoodiered
+	cost = 3
+//	slot = slot_suit
+
 /datum/gear/orange_shoes
 	display_name = "orange shoes"
 	path = /obj/item/clothing/shoes/orange
@@ -575,19 +581,19 @@ proc/populate_gear_list()
 	whitelisted = "Tajaran"
 */
 
-/datum/gear/soghun_robe
+/datum/gear/unathi_robe
 	display_name = "roughspun robe"
-	path = /obj/item/clothing/suit/soghun/robe
+	path = /obj/item/clothing/suit/unathi/robe
 	cost = 3
 //	slot = slot_wear_suit
-	whitelisted = "Soghun"
+	whitelisted = "unathi"
 
-/datum/gear/soghun_mantle
+/datum/gear/unathi_mantle
 	display_name = "hide mantle"
-	path = /obj/item/clothing/suit/soghun/mantle
+	path = /obj/item/clothing/suit/unathi/mantle
 	cost = 2
 //	slot = slot_wear_suit
-	whitelisted = "Soghun"
+	whitelisted = "unathi"
 
 /datum/gear/cigar_case
 	display_name = "cigar case"
