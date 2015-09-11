@@ -60,7 +60,6 @@
 					B.name = "The Holy Book of [new_religion]"
 			feedback_set_details("religion_name","[new_religion]")
 
-
 		spawn(1)
 			var/deity_name = "Space Jesus"
 			var/new_deity = copytext(sanitize(input(H, "Would you like to change your deity? Default is Space Jesus.", "Name change", deity_name)),1,MAX_NAME_LEN)
@@ -145,8 +144,6 @@
 						if(outoftime)
 							H << "Welp, out of time, buddy. You're stuck. Next time choose faster."
 							accepted = 1
-
-
 
 			if(ticker)
 				ticker.Bible_icon_state = B.icon_state
