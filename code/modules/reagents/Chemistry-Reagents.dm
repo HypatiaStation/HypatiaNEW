@@ -3017,13 +3017,6 @@ datum
 			color = "#202800" // rgb: 32, 40, 0
 			adj_temp = -8
 
-		drink/cold/cherrycola
-			name = "Cherry Space Cola"
-			id = "cherrycola"
-			description = "The only variation on space cola anyone even likes"
-			color = "#102000" // rgb: 16, 32, 0
-			adj_drowsy = -6
-
 		drink/cold/lemon_lime
 			name = "Lemon Lime"
 			description = "A tangy substance made of 0.5% natural citrus!"
@@ -4476,12 +4469,12 @@ datum
 ///////////////////////////////
 ///////////////////////////////
 
-	/*	ethanol/guinnes
+		ethanol/guinnes
 			name = "Guinness"
 			id = "guinnes"
 			description = "Special Guinnes drink"
 			color = "#2E6671"  // dunno -- god dammit -_-
-			boozepwr = 3 */
+			boozepwr = 3
 
 		ethanol/drambuie
 			name = "Drambuie"
