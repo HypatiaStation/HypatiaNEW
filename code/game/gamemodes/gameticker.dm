@@ -22,7 +22,6 @@ var/global/datum/controller/gameticker/ticker
 
 	var/Bible_icon_state	// icon_state the chaplain has chosen for his bible
 	var/Bible_item_state	// item_state the chaplain has chosen for his bible
-	var/Banner_icon_state	// icon_state the chaplain has chosen for his banner
 	var/Bible_name			// name of the bible
 	var/Bible_deity_name
 
@@ -45,8 +44,11 @@ var/global/datum/controller/gameticker/ticker
 	/*'sound/music/halloween/skeletons.ogg',\
 	'sound/music/halloween/halloween.ogg',\
 	'sound/music/halloween/ghosts.ogg'*/
-	'sound/music/title1.ogg',\
-	'sound/music/title2.ogg',)
+	'sound/music/space.ogg',\
+	'sound/music/traitor.ogg',\
+	'sound/music/title2.ogg',\
+	'sound/music/clouds.s3m',\
+	'sound/music/space_oddity.ogg') //Ground Control to Major Tom, this song is cool, what's going on?
 	do
 		pregame_timeleft = 180
 		world << "<B><FONT color='blue'>Welcome to the pre-game lobby!</FONT></B>"
