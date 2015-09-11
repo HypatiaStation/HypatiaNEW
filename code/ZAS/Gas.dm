@@ -17,7 +17,7 @@
 	name = "Carbon Dioxide"
 	specific_heat = 30	// J/(mol*K)
 	molar_mass = 0.044	// kg/mol
-
+/*
 /xgm_gas/phoron
 	id = "phoron"
 	name = "Phoron(Error)"
@@ -31,7 +31,7 @@
 	tile_overlay = "phoron"
 	overlay_limit = 0.7
 	flags = XGM_GAS_FUEL | XGM_GAS_CONTAMINANT
-
+*/
 /xgm_gas/toxins
 	id = "toxins"
 	name = "Toxins"
@@ -42,7 +42,7 @@
 	//and following a N/Z ratio of 1.5, the molar mass of a monatomic gas is:
 	molar_mass = 0.405	// kg/mol
 
-//	tile_overlay = "phoron"  //particles all over the screen are annoying and laggy
+	tile_overlay = "phoron"  //particles all over the screen are annoying and laggy
 	overlay_limit = 0.7
 	flags = XGM_GAS_FUEL | XGM_GAS_CONTAMINANT
 
