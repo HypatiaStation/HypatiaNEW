@@ -14,14 +14,14 @@
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
 	//Species-specific stuff.
-	species_restricted = list("exclude","Soghun","Tajaran","Skrell","Diona","Vox")
+	species_restricted = list("exclude","Unathi","Tajaran","Skrell","Diona","Vox")
 	sprite_sheets_refit = list(
-		"Soghun" = 'icons/mob/species/soghun/helmet.dmi',
+		"Unathi" = 'icons/mob/species/unathi/helmet.dmi',
 		"Tajaran" = 'icons/mob/species/tajaran/helmet.dmi',
 		"Skrell" = 'icons/mob/species/skrell/helmet.dmi',
 		)
 	sprite_sheets_obj = list(
-		"Soghun" = 'icons/obj/clothing/species/soghun/hats.dmi',
+		"Unathi" = 'icons/obj/clothing/species/unathi/hats.dmi',
 		"Tajaran" = 'icons/obj/clothing/species/tajaran/hats.dmi',
 		"Skrell" = 'icons/obj/clothing/species/skrell/hats.dmi',
 		)
@@ -64,14 +64,14 @@
 	heat_protection = UPPER_TORSO|LOWER_TORSO|LEGS|FEET|ARMS|HANDS
 	max_heat_protection_temperature = SPACE_SUIT_MAX_HEAT_PROTECTION_TEMPERATURE
 
-	species_restricted = list("exclude","Soghun","Tajaran","Diona","Vox")
+	species_restricted = list("exclude","Unathi","Tajaran","Diona","Vox")
 	sprite_sheets_refit = list(
-		"Soghun" = 'icons/mob/species/soghun/suit.dmi',
+		"Unathi" = 'icons/mob/species/unathi/suit.dmi',
 		"Tajaran" = 'icons/mob/species/tajaran/suit.dmi',
 		"Skrell" = 'icons/mob/species/skrell/suit.dmi',
 		)
 	sprite_sheets_obj = list(
-		"Soghun" = 'icons/obj/clothing/species/soghun/suits.dmi',
+		"Unathi" = 'icons/obj/clothing/species/unathi/suits.dmi',
 		"Tajaran" = 'icons/obj/clothing/species/tajaran/suits.dmi',
 		"Skrell" = 'icons/obj/clothing/species/skrell/suits.dmi',
 		)
@@ -552,7 +552,7 @@
 	armor = list(melee = 60, bullet = 50, laser = 30,energy = 15, bomb = 35, bio = 100, rad = 60)
 	siemens_coefficient = 0.6
 	var/obj/machinery/camera/camera
-	species_restricted = list("exclude","Soghun","Tajaran","Skrell","Vox")
+	species_restricted = list("exclude","Unathi","Tajaran","Skrell","Vox")
 
 
 /obj/item/clothing/head/helmet/space/rig/syndi/attack_self(mob/user)
@@ -580,7 +580,7 @@
 	armor = list(melee = 60, bullet = 50, laser = 30, energy = 15, bomb = 35, bio = 100, rad = 60)
 	allowed = list(/obj/item/device/flashlight,/obj/item/weapon/tank,/obj/item/device/suit_cooling_unit,/obj/item/weapon/gun,/obj/item/ammo_magazine,/obj/item/ammo_casing,/obj/item/weapon/melee/baton,/obj/item/weapon/melee/energy/sword,/obj/item/weapon/handcuffs)
 	siemens_coefficient = 0.6
-	species_restricted = list("exclude","Soghun","Tajaran","Skrell","Vox")
+	species_restricted = list("exclude","Unathi","Tajaran","Skrell","Vox")
 
 
 //Wizard Rig

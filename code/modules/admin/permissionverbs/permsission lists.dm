@@ -282,7 +282,13 @@ var/list/admin_verbs_mod = list(
 	/client/proc/toggledebuglogs,
 	/client/proc/toggleprayers
 )
-
+var/list/admin_verbs_donor = list(
+	/datum/admins/proc/view_txt_log,	/*shows the server log (diary) for today*/
+	/datum/admins/proc/view_atk_log,	/*shows the server combat-log, doesn't do anything presently*/
+	/client/proc/cmd_mod_say,
+	/client/proc/dsay,
+	/client/proc/admin_ghost
+)
 //verbs which can be hidden - needs work
 var/list/admin_verbs_hideable = list(
 	/datum/admins/proc/access_news_network,
@@ -422,4 +428,5 @@ var/list/admin_verbs_duty = list(
 		if(holder.rights & R_SPAWN)			verbs += admin_verbs_spawn
 		if(holder.rights & R_MOD)			verbs += admin_verbs_mod
 		if(holder.rights & R_DEV)			verbs += admin_verbs_dev
+		if(holder.rights & R_DONOR)			verbs += admin_verbs_donor
 		if(holder.rights & R_DUTYOFF)		verbs += admin_verbs_duty //hehe duty

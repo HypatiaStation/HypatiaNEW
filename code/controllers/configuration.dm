@@ -56,6 +56,8 @@
 	var/humans_need_surnames = 0
 	var/allow_random_events = 0			// enables random events mid-round when set to 1
 	var/allow_ai = 0					// allow ai job
+	var/panic_bunker = 0				// prevents new people it hasn't seen before from connecting
+	var/notify_new_player_age = 0		// how long do we notify admins of a new player
 	var/hostedby = null
 	var/respawn = 1
 	var/guest_jobban = 1
@@ -312,6 +314,12 @@
 
 				if ("allow_ai")
 					config.allow_ai = 1
+
+				if("panic_bunker")
+					config.panic_bunker = 1
+
+				if("notify_new_player_age")
+					config.notify_new_player_age = text2num(value)
 
 //				if ("authentication")
 //					config.enable_authentication = 1

@@ -1222,24 +1222,6 @@ proc/populate_seed_list()
 	potency = 10
 	growth_stages = 6
 
-/datum/seed/pear
-	name = "pear"
-	seed_name = "pear"
-	display_name = "pears"
-	packet_icon = "seed-pear"
-	products = list(/obj/item/weapon/reagent_containers/food/snacks/grown/pear)
-	plant_icon = "pear"
-	harvest_repeat = 1
-	chems = list("nutriment" = list(1,10))
-
-	lifespan = 20
-	maturation = 5
-	production = 5
-	yield = 4
-	potency = 10
-	growth_stages = 6
-
-
 /datum/seed/ginger
 	name = "ginger"
 	seed_name = "ginger"
@@ -1253,26 +1235,9 @@ proc/populate_seed_list()
 	lifespan = 55
 	maturation = 6
 	production = 6
-	yield = 1
-	potency = 10
-	growth_stages = 3
-
-/datum/seed/onion
-	name = "onion"
-	seed_name = "onion"
-	display_name = "onion bulbs"
-	packet_icon = "seed-onion"
-	products = list(/obj/item/weapon/reagent_containers/food/snacks/grown/onion)
-	plant_icon = "onion"
-	harvest_repeat = 1
-	chems = list("nutriment" = list(1,10))
-
-	lifespan = 55
-	maturation = 6
-	production = 4
 	yield = 2
 	potency = 10
-	growth_stages = 4
+	growth_stages = 3
 
 /datum/seed/banana
 	name = "banana"

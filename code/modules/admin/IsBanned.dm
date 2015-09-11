@@ -21,7 +21,11 @@ world/IsBanned(key,address,computer_id)
 		message_admins("\blue Failed Login: [key] - Guests not allowed")
 		del Adminbot
 		return list("reason"="guest", "desc"="\nReason: Guests not allowed. Please sign in with a byond account.")
-
+	if (config.panic_bunker && dbcon && dbcon.IsConnected())
+		log_access("Failed Login: [key] - Guests not allowed during panic bunker")
+		message_admins("\blue Failed Login: [key] - Guest attempted connection during Panic Bunker")
+		del Adminbot
+		return list("reason"="guest", "desc"="\nReason: Sorry but the server is currently not accepting connections from never before seen players or guests. If you have played on this server with a byond account before, please log in to the byond account you have played from.")
 	//check if the IP address is a known TOR node
 	if(config && config.ToRban && ToRban_isbanned(address))
 		log_access("Failed Login: [src] - Banned: ToR")

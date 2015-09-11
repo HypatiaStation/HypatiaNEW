@@ -244,26 +244,6 @@
 		src.pixel_x = rand(-10.0, 10)
 		src.pixel_y = rand(-10.0, 10)
 
-/obj/item/weapon/reagent_containers/food/drinks/cans/holyslammer
-	name = "Holy Slammer"
-	desc = "The esteemed Reverend Barkley invites you to slam."
-	icon_state = "holyslammer"
-	New()
-		..()
-		reagents.add_reagent("holywater", 30)
-		src.pixel_x = rand(-10.0, 10)
-		src.pixel_y = rand(-10.0, 10)
-
-/obj/item/weapon/reagent_containers/food/drinks/cans/cherrycola
-	name = "Cherry Space Cola"
-	desc = "The only variation on space cola anyone even likes"
-	icon_state = "cherrycola"
-	New()
-		..()
-		reagents.add_reagent("cherrycola", 30)
-		src.pixel_x = rand(-10.0, 10)
-		src.pixel_y = rand(-10.0, 10)
-
 /obj/item/weapon/reagent_containers/food/drinks/cans/grape_juice
 	name = "Grapel Juice"
 	desc = "500 pages of rules of how to appropriately enter into a combat with this juice!"

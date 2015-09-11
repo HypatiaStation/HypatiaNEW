@@ -112,6 +112,7 @@
 	spawn_positions = 1
 	supervisors = "the head of personnel"
 	selection_color = "#dddddd"
+	idtype = /obj/item/weapon/card/id/silver
 	access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mint, access_mining, access_mining_station)
 	minimal_access = list(access_maint_tunnels, access_mailsorting, access_cargo, access_cargo_bot, access_qm, access_mint,access_heads,access_keycard_auth, access_mining, access_mining_station)
 
@@ -230,7 +231,7 @@
 		return 1
 
 
-
+*/
 /datum/job/mime
 	title = "Mime"
 	flag = MIME
@@ -264,12 +265,12 @@
 			H.equip_to_slot_or_del(new /obj/item/toy/crayon/mime(H), slot_in_backpack)
 			H.equip_to_slot_or_del(new /obj/item/weapon/reagent_containers/food/drinks/bottle/bottleofnothing(H), slot_in_backpack)
 		H.verbs += /client/proc/mimespeak
-		H.verbs += /client/proc/mimewall
+//		H.verbs += /client/proc/mimewall
 		H.mind.special_verbs += /client/proc/mimespeak
-		H.mind.special_verbs += /client/proc/mimewall
+//		H.mind.special_verbs += /client/proc/mimewall
 		H.miming = 1
 		return 1
-*/
+
 
 
 /datum/job/janitor

@@ -23,9 +23,9 @@
 		/obj/item/weapon/reagent_containers/food/snacks/grown/grapes = "grapejuice",
 		/obj/item/weapon/reagent_containers/food/snacks/grown/poisonberries = "poisonberryjuice",
 		/obj/item/weapon/reagent_containers/food/snacks/grown/ginger = "gingerjuice",
-		/obj/item/weapon/reagent_containers/food/snacks/grown/apple = "applejuice",
+		/obj/item/weapon/reagent_containers/food/snacks/grown/greengrapes = "greengrapejuice",
 		/obj/item/weapon/reagent_containers/food/snacks/grown/strawberry = "strawberryjuice",
-
+		/obj/item/weapon/reagent_containers/food/snacks/grown/apple = "applejuice",
 	)
 
 /obj/machinery/juicer/New()

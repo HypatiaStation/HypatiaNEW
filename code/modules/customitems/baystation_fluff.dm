@@ -483,7 +483,7 @@
 	siemens_coefficient = 0.30
 	permeability_coefficient = 0.01
 	item_color="white"
-	species_restricted = list("exclude","Soghun")
+	species_restricted = list("exclude","Unathi")
 
 /obj/item/clothing/gloves/fluff/walter_brooks_1 //botanistpower: Walter Brooks
 	name = "mittens"
@@ -609,15 +609,15 @@
 	name = "old scarf"
 	desc = "An old looking scarf, it seems to be fairly worn."
 	icon = 'icons/obj/clothing/suits.dmi'
-	icon_state = "mantle-soghun"
-	item_state = "mantle-soghun"
+	icon_state = "mantle-unathi"
+	item_state = "mantle-unathi"
 	body_parts_covered = UPPER_TORSO
 
 //////////// Uniforms ////////////
 
-/obj/item/clothing/under/fluff/milo_hachert //Field Dress Uniform - Milo Hachert - Commissar_Drew
-	name = "field dress uniform"
-	desc = "A uniform jacket, its buttons polished to a shine, coupled with a dark pair of trousers. 'Hachert' is embroidered upon the jacket’s shoulder bar."
+/obj/item/clothing/under/fluff/ertdressblue //Field Dress Uniform - Milo Hachert - Commissar_Drew
+	name = "ERT dress uniform"
+	desc = "A uniform jacket, its buttons polished to a shine, coupled with a dark pair of trousers. 'ERT' is embroidered upon the jacket’s shoulder bar."
 	icon = 'icons/obj/custom_items.dmi'
 	icon_state = "milohachert"
 	item_state = "milohachert"

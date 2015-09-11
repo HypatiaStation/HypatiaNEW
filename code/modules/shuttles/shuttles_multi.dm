@@ -72,7 +72,7 @@
 
 	dat += "<br><b><A href='?src=\ref[src];toggle_cloak=[1]'>Toggle cloaking field</A></b><br>"
 	dat += "<b><A href='?src=\ref[src];move_multi=[1]'>Move ship</A></b><br>"
-	dat += "<b><A href='?src=\ref[src];start=[1]'>Return to base</A></b></center>"
+	dat += "<b><A href='?src=\ref[src];start=[1]'>Return to the NMV-BC Manticore</A></b></center>"
 
 	user << browse("[dat]", "window=[shuttle_tag]shuttlecontrol;size=300x600")
 
@@ -85,7 +85,7 @@
 
 	var/datum/shuttle/multi_shuttle/MS = shuttle_controller.shuttles[shuttle_tag]
 	if(!istype(MS)) return
-	
+
 	//world << "multi_shuttle: last_departed=[MS.last_departed], origin=[MS.origin], interim=[MS.interim], travel_time=[MS.move_time]"
 
 	if (MS.moving_status != SHUTTLE_IDLE)
@@ -95,15 +95,9 @@
 	if(href_list["start"])
 
 		if(MS.at_origin)
-			usr << "\red You are already at your home base."
+			usr << "\red You are already at the Manticore."
 			return
 
-		if(!MS.return_warning)
-			usr << "\red Returning to your home base will end your mission. If you are sure, press the button again."
-			//TODO: Actually end the mission.
-			MS.return_warning = 1
-			return
-		
 		MS.long_jump(MS.last_departed,MS.origin,MS.interim,MS.move_time)
 		MS.last_departed = MS.origin
 		MS.at_origin = 1
@@ -111,7 +105,7 @@
 	if(href_list["toggle_cloak"])
 
 		MS.cloaked = !MS.cloaked
-		usr << "\red Ship stealth systems have been [(MS.cloaked ? "activated. The station will not" : "deactivated. The station will")] be warned of our arrival."
+		usr << "\red Ship stealth systems have been [(MS.cloaked ? "activated. The station will not" : "deactivated. The station will")] be informed of our arrival."
 
 	if(href_list["move_multi"])
 		if((MS.last_move + MS.cooldown*10) > world.time)
@@ -128,7 +122,7 @@
 			MS.last_departed = MS.origin
 			MS.at_origin = 0
 
-			
+
 			MS.long_jump(MS.last_departed, MS.destinations[choice], MS.interim, MS.move_time)
 			MS.last_departed = MS.destinations[choice]
 			return

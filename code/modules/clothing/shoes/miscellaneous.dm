@@ -25,12 +25,32 @@
 
 /obj/item/clothing/shoes/combat //Basically SWAT shoes combined with galoshes.
 	name = "combat boots"
-	desc = "When you REALLY want to turn up the heat"
+	desc = "Nanotrasen standard issue combat boots for all situations. Oorah!"
 	icon_state = "swat"
 	armor = list(melee = 80, bullet = 60, laser = 50,energy = 25, bomb = 50, bio = 10, rad = 0)
 	flags = NOSLIP
 	siemens_coefficient = 0.6
+	var/obj/item/weapon/combatknife/knife
 
+	//Knife slot
+	attack_hand(var/mob/living/M)
+		if(knife)
+			knife.loc = get_turf(src)
+			if(M.put_in_active_hand(knife))
+				M << "<div class='notice'>You slide the [knife] out of [src].</div>"
+				playsound(M, 'sound/weapons/knifedraw.ogg', 40, 1)
+				knife = 0
+			return
+		..()
+
+	attackby(var/obj/item/I, var/mob/living/M)
+		if(istype(I, /obj/item/weapon/combatknife))
+			if(knife)	return
+			M.drop_item()
+			knife = I
+			I.loc = src
+			M << "<div class='notice'>You slide the [I] into [src].</div>"
+			playsound(M, 'knifeinsert.ogg', 40, 1)
 	cold_protection = FEET
 	min_cold_protection_temperature = SHOE_MIN_COLD_PROTECTION_TEMPERATURE
 	heat_protection = FEET

@@ -61,7 +61,8 @@
 		silent = 0
 	else
 		updatehealth()
-
+		handle_stunned()
+		handle_weakened()
 		if(health <= 0)
 			death()
 			blinded = 1
@@ -74,15 +75,14 @@
 			stat = UNCONSCIOUS
 			if(halloss > 0)
 				adjustHalLoss(-3)
-		else if(sleeping)
 
+		if(sleeping)
 			adjustHalLoss(-3)
 			if (mind)
-				if((mind.active && client != null) || immune_to_ssd)
+				if(mind.active && client != null)
 					sleeping = max(sleeping-1, 0)
 			blinded = 1
 			stat = UNCONSCIOUS
-
 		else if(resting)
 			if(halloss > 0)
 				adjustHalLoss(-3)
@@ -149,9 +149,6 @@
 		else
 			healths.icon_state = "health7"
 
-	if(pullin)
-		pullin.icon_state = "pull[pulling ? 1 : 0]"
-
 	if (client)
 		client.screen.Remove(global_hud.blurry,global_hud.druggy,global_hud.vimpaired)
 
@@ -169,7 +166,7 @@
 
 	if (stat != 2)
 		if (machine)
-			if (!( machine.check_eye(src) ))
+			if ( machine.check_eye(src) < 0)
 				reset_view(null)
 		else
 			if(client && !client.adminobs)

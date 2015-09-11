@@ -2782,6 +2782,24 @@ datum
 			description = "It's grrrrrape!"
 			color = "#863333" // rgb: 134, 51, 51
 
+		drink/strawberryjuice
+			name = "Strawberry Juice"
+			id = "strawberryjuice"
+			description = "Like summer attacked your tastebuds."
+			color = "#f23616" // rgb: 175, 0, 0
+
+		drink/applejuice
+			name = "Apple Juice"
+			id = "applejuice"
+			description = "Morning Glory"
+			color = "#ddad76" // rgb: 175, 0, 0
+
+		drink/gingerjuice
+			name = "Ginger Juice"
+			id = "gingerjuice"
+			description = "Why would you ever drink this space jesus christ."
+			color = "#CC6633" // rgb: 175, 0, 0
+
 		drink/grapesoda
 			name = "Grape Soda"
 			id = "grapesoda"
@@ -3342,53 +3360,6 @@ datum
 				holder.remove_reagent(src.id, FOOD_METABOLISM)
 				..()
 				return
-
-		ethanol/gingerale
-			name = "Ginger Ale"
-			id = "gingerale"
-			description = "This'll put hairs on your chest."
-			color = "#664300" // rgb: 102, 67, 0
-			boozepwr = 2
-
-		ethanol/gingerbeer
-			name = "Ginger Beer"
-			id = "gingerbeer"
-			description = "This won't."
-			color = "#664300" // rgb: 102, 67, 0
-			boozepwr = 1
-
-		drink/strawberryjuice
-			name = "Strawberry Juice"
-			id = "strawberryjuice"
-			description = "Like summer attacked your tastebuds."
-			color = "#f23616" // rgb: 175, 0, 0
-
-		drink/applejuice
-			name = "Apple Juice"
-			id = "applejuice"
-			description = "Morning Glory"
-			color = "#ddad76" // rgb: 175, 0, 0
-
-		drink/gingerjuice
-			name = "Ginger Juice"
-			id = "gingerjuice"
-			description = "Why would you ever drink this space jesus christ."
-			color = "#CC6633" // rgb: 175, 0, 0
-
-		ethanol/strawberry_daiquiri
-			name = "Strawberry Daiquiri"
-			id = "strawberry_daiquiri"
-			description = "A fruity drink for fruity people."
-			color = "#FFB6C1"
-			boozepwr = 2
-
-		ethanol/watermelon_vodka
-			name = "Watermelon Vodka"
-			id = "watermelon_vodka"
-			description = "College life distilled into one drink."
-			color = "#FFB6C1"
-			boozepwr = 4
-
 
 		drink/cold/rewriter
 			name = "Rewriter"

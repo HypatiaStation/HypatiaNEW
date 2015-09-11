@@ -345,16 +345,16 @@ See code\modules\mob\new_player\preferences_setup.dm for where it's used.
 	//If you wanted to add a species-level ability:
 	/*abilities = list(/client/proc/test_ability)*/
 
-/datum/species/soghun
-	name = "Soghun"
-	name_plural = "Soghun"
+/datum/species/unathi
+	name = "Unathi"
+	name_plural = "Unathi"
 	icobase = 'icons/mob/human_races/r_lizard.dmi'
 	deform = 'icons/mob/human_races/r_def_lizard.dmi'
-	language = "Sinta'soghun"
+	language = "Sinta'unathi"
 	tail = "sogtail"
 	unarmed_type = /datum/unarmed_attack/claws
 	secondary_unarmed_type = /datum/unarmed_attack/bite/strong
-	primitive = /mob/living/carbon/monkey/soghun
+	primitive = /mob/living/carbon/monkey/unathi
 	darksight = 3
 	gluttonous = 1
 
@@ -370,7 +370,7 @@ See code\modules\mob\new_player\preferences_setup.dm for where it's used.
 
 	flesh_color = "#34AF10"
 
-	reagent_tag = IS_SOGHUN
+	reagent_tag = IS_UNATHI
 	base_color = "#066000"
 
 /datum/species/tajaran

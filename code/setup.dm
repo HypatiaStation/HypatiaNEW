@@ -2,6 +2,7 @@
 #define DEBUG
 
 #define PI 3.1415
+#define M_PI 3.14159265
 
 #define R_IDEAL_GAS_EQUATION	8.31 //kPa*L/(K*mol)
 #define ONE_ATMOSPHERE		101.325	//kPa
@@ -621,18 +622,19 @@ var/list/liftable_structures = list(\
 #define R_SERVER		16
 #define R_DEBUG			32
 #define R_POSSESS		64
-#define R_PERMISSIONS	128
-#define R_STEALTH		256
-#define R_REJUVINATE	512
-#define R_VAREDIT		1024
-#define R_SOUNDS		2048
-#define R_SPAWN			4096
-#define R_MOD			8192
-#define R_DEV			16384
-#define R_DUTYOFF		32768
-#define R_MAXPERMISSION 32768 //This holds the maximum value for a permission. It is used in iteration, so keep it updated.
+#define R_PERMISSIONS	256
+#define R_STEALTH		512
+#define R_REJUVINATE	1024
+#define R_VAREDIT		2048
+#define R_SOUNDS		4096
+#define R_SPAWN			8192
+#define R_MOD			16384
+#define R_DEV			32768
+#define R_DUTYOFF		65536
+#define R_DONOR 		131072
+#define R_MAXPERMISSION 131072 //This holds the maximum value for a permission. It is used in iteration, so keep it updated.
 
-#define R_HOST			65535
+#define R_HOST			262143
 
 //Preference toggles
 #define SOUND_ADMINHELP	1
@@ -865,7 +867,7 @@ var/list/RESTRICTED_CAMERA_NETWORKS = list( //Those networks can only be accesse
 #define IS_DIONA 1
 #define IS_VOX 2
 #define IS_SKRELL 3
-#define IS_SOGHUN 4
+#define IS_UNATHI 4
 #define IS_XENOS 5
 
 #define MAX_GEAR_COST 5 //Used in chargen for loadout limit.

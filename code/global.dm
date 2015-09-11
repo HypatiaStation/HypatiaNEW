@@ -84,7 +84,7 @@ var/href_logfile = null
 var/station_name = "NSS Hypatia"
 var/game_version = "Baystation12"
 var/changelog_hash = ""
-var/game_year = (text2num(time2text(world.realtime, "YYYY")) + 442)
+var/game_year = (text2num(time2text(world.realtime, "YYYY")) + 1001)
 var/forum_link = "http://Hypatiastation.org/forums/"
 
 var/datum/air_tunnel/air_tunnel1/SS13_airtunnel = null

@@ -381,10 +381,65 @@ var/list/ghostteleportlocs = list()
 /area/centcom/prison
 	name = "\improper Prison Facility"
 
+/area/centcom/manticore
+	name = "\improper NMV-BC Manticore"
+
+/area/centcom/manticorebridge
+	name = "\improper NMV-BC Manticore Bridge"
+
+/area/centcom/manticoremedbay
+	name = "\improper NMV-BC Manticore Medbay"
+
+/area/centcom/manticorecloning
+	name = "\improper NMV-BC Manticore Cloning Lab"
+
+/area/centcom/manticorernd
+	name = "\improper NMV-BC Manticore Research and Development"
+
+/area/centcom/manticorecanteen
+	name = "\improper NMV-BC Manticore Mess Hall"
+
+/area/centcom/manticoreinterrogation
+	name = "\improper NMV-BC Manticore Interrogation Chamber"
+
+/area/centcom/manticorebunks
+	name = "\improper NMV-BC Manticore Bunks"
+
+/area/centcom/manticorenco
+	name = "\improper NMV-BC Manticore NCO Bunks"
+
+/area/centcom/manticorehangar
+	name = "\improper NMV-BC Manticore Hangar"
+
+/area/centcom/manticorebriefing
+	name = "\improper NMV-BC Manticore Briefing Room"
+
+/area/centcom/manticorecoquarters
+	name = "\improper NMV-BC Manticore Officer's Quarters"
+
+/area/centcom/manticorepilot
+	name = "\improper NMV-BC Manticore Pilot Bunks"
+
+/area/centcom/manticorearmoury
+	name = "\improper NMV-BC Manticore Armoury"
+
+/area/centcom/manticoretraining
+	name = "\improper NMV-BC Manticore Training"
+
+/area/manticoretraining
+	name = "\improper NMV-BC Manticore Training"
+	icon_state = "centcom"
+
 //SYNDICATES
 
 /area/syndicate_mothership
 	name = "\improper Syndicate Base"
+	icon_state = "syndie-ship"
+	requires_power = 0
+	unlimited_power = 1
+
+/area/syndicate_mothership/merc_base
+	name = "\improper Merc Base"
 	icon_state = "syndie-ship"
 	requires_power = 0
 	unlimited_power = 1
@@ -496,6 +551,10 @@ var/list/ghostteleportlocs = list()
 
 /area/syndicate_station/mining
 	name = "\improper north east of the mining asteroid"
+	icon_state = "north"
+
+/area/syndicate_station/arrivals
+	name = "\improper NSS Hypatia arrivals"
 	icon_state = "north"
 
 /area/syndicate_station/transit

@@ -227,6 +227,24 @@
 				dispensable_reagents -= list("goldschlager","patron","watermelonjuice","berryjuice")
 				hackedcheck = 0
 				return
+
+/obj/machinery/chem_dispenser/meds
+	name = "chem dispenser magic"
+	density = 1
+	anchored = 1
+	icon = 'icons/obj/chemical.dmi'
+	icon_state = "dispenser"
+	use_power = 0
+	idle_power_usage = 40
+	ui_title = "Chem Dispenser 9000"
+	energy = 100
+	max_energy = 100
+	amount = 30
+	accept_glass = 1 //At 0 ONLY accepts glass containers. Kinda misleading varname.
+	beaker = null
+	recharged = 0
+	hackedcheck = 0
+	dispensable_reagents = list("inaprovaline","ryetalyn","paracetamol","tramadol","oxycodone","sterilizine","leporazine","kelotane","dermaline","dexalin","dexalinp","tricordrazine","anti_toxin","synaptizine","hyronalin","arithrazine","alkysine","imidazoline","peridaxon","bicaridine","hyperzine","rezadone","spaceacillin","ethylredoxrazine","stoxin","chloralhydrate","cryoxadone","clonexadone")
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
@@ -852,10 +870,10 @@
 		/obj/item/weapon/reagent_containers/food/snacks/grown/potato = list("potato" = 0),
 		/obj/item/weapon/reagent_containers/food/snacks/grown/lemon = list("lemonjuice" = 0),
 		/obj/item/weapon/reagent_containers/food/snacks/grown/orange = list("orangejuice" = 0),
-		/obj/item/weapon/reagent_containers/food/snacks/grown/lime = list("limejuice" = 0),
 		/obj/item/weapon/reagent_containers/food/snacks/grown/apple = list("applejuice" = 0),
 		/obj/item/weapon/reagent_containers/food/snacks/grown/strawberry = list("strawberryjuice" = 0),
 		/obj/item/weapon/reagent_containers/food/snacks/grown/ginger = list("gingerjuice" = 0),
+		/obj/item/weapon/reagent_containers/food/snacks/grown/lime = list("limejuice" = 0),
 		/obj/item/weapon/reagent_containers/food/snacks/watermelonslice = list("watermelonjuice" = 0),
 		/obj/item/weapon/reagent_containers/food/snacks/grown/grapes = list("grapejuice" = 0),
 		/obj/item/weapon/reagent_containers/food/snacks/grown/poisonberries = list("poisonberryjuice" = 0),

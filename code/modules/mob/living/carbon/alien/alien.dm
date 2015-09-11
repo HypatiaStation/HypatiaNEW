@@ -1,24 +1,26 @@
 /mob/living/carbon/alien
+
 	name = "alien"
 	desc = "What IS that?"
 	icon = 'icons/mob/alien.dmi'
 	icon_state = "alien"
 	pass_flags = PASSTABLE
-	melee_damage_lower = 1
-	melee_damage_upper = 3
-	attacktext = "bites"
-	attack_sound = null
-	friendly = "nuzzles"
-	wall_smash = 0
 	health = 100
 	maxHealth = 100
 
 	var/adult_form
 	var/dead_icon
 	var/amount_grown = 0
-	var/max_grown = 10
+	var/max_grown = 300
 	var/time_of_birth
 	var/language
+	var/death_msg = "lets out a waning guttural screech, green blood bubbling from its maw."
+	melee_damage_lower = 1
+	melee_damage_upper = 3
+	attacktext = "bites"
+	attack_sound = null
+	friendly = "nuzzles"
+	wall_smash = 0
 
 /mob/living/carbon/alien/New()
 
@@ -47,8 +49,7 @@
 
 /mob/living/carbon/alien/Stat()
 	..()
-	if(!istype(src, /mob/living/carbon/alien/humanoid))
-		stat(null, "Progress: [amount_grown]/[max_grown]")
+	stat(null, "Progress: [amount_grown]/[max_grown]")
 
 /mob/living/carbon/alien/restrained()
 	return 0

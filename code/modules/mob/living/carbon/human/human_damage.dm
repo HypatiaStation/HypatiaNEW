@@ -21,6 +21,15 @@
 		ChangeToHusk()
 	return
 
+/mob/living/carbon/human/proc/update_revive() // handles revival through other means than cloning or adminbus (defib, IPC repair)
+	stat = CONSCIOUS
+	dead_mob_list -= src
+	living_mob_list |= src
+	mob_list |= src
+	ear_deaf = 0
+	tod = 0
+	timeofdeath = 0
+
 /mob/living/carbon/human/adjustBrainLoss(var/amount)
 
 	if(status_flags & GODMODE)	return 0	//godmode
@@ -345,6 +354,10 @@ This function restores the subjects blood to max.
 This function restores all organs.
 */
 /mob/living/carbon/human/restore_all_organs()
+	for(var/species_organ in species.has_organ)
+		if(!(species_organ in internal_organs_by_name))
+			var/organ_type = species.has_organ[species_organ]
+			internal_organs_by_name[species_organ] = new organ_type(src)
 	for(var/datum/organ/external/current_organ in organs)
 		current_organ.rejuvenate()
 

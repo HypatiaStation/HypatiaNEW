@@ -132,6 +132,11 @@ proc/hasorgans(A)
 /proc/hsl2rgb(h, s, l)
 	return //TODO: Implement
 
+/proc/get_both_hands(mob/living/carbon/M)
+	var/list/hands = list(M.l_hand, M.r_hand)
+	return hands
+
+
 /*
 	Miss Chance
 */
@@ -189,7 +194,7 @@ var/list/global/organ_rel_size = list(
 
 	var/ran_zone = zone
 	while (ran_zone == zone)
-		ran_zone = pick ( 
+		ran_zone = pick (
 			organ_rel_size["head"]; "head",
 			organ_rel_size["chest"]; "chest",
 			organ_rel_size["groin"]; "groin",
@@ -202,7 +207,7 @@ var/list/global/organ_rel_size = list(
 			organ_rel_size["l_foot"]; "l_foot",
 			organ_rel_size["r_foot"]; "r_foot",
 		)
-	
+
 	return ran_zone
 
 // Emulates targetting a specific body part, and miss chances
@@ -341,11 +346,11 @@ It's fairly easy to fix if dealing with single letters but not so much with comp
 
 
 /proc/shake_camera(mob/M, duration, strength=1)
-	if(!M || !M.client || M.shakecamera)  
+	if(!M || !M.client || M.shakecamera)
 		return
 	M.shakecamera = 1
 	spawn(1)
-		
+
 		var/atom/oldeye=M.client.eye
 		var/aiEyeFlag = 0
 		if(istype(oldeye, /mob/aiEye))
@@ -406,53 +411,53 @@ var/list/intents = list("help","disarm","grab","hurt")
 	set name = "key-pressed-c"
 	if (mob)
 		mob:key_pressed_c()
-	
+
 /client/verb/key_pressed_q()
 	set hidden = 1
 	set name = "key-pressed-q"
 	if (mob)
 		mob:key_pressed_q()
-	
+
 /client/verb/key_pressed_v()
 	set hidden = 1
 	set name = "key-pressed-v"
 	if (mob)
 		mob:key_pressed_v()
-			
+
 /mob/proc/key_pressed_1()
 	return a_intent_change("help")
 /mob/proc/key_pressed_2()
-	return a_intent_change("disarm")	
+	return a_intent_change("disarm")
 /mob/proc/key_pressed_3()
 	return a_intent_change("grab")
 /mob/proc/key_pressed_4()
 	return a_intent_change("hurt")
-	
+
 /client/verb/key_pressed_1()
 	set hidden = 1
 	set name = "key-pressed-1"
 	if (mob)
 		mob:key_pressed_1()
-		
+
 /client/verb/key_pressed_2()
 	set hidden = 1
 	set name = "key-pressed-2"
 	if (mob)
 		mob:key_pressed_2()
-		
+
 /client/verb/key_pressed_3()
 	set hidden = 1
 	set name = "key-pressed-3"
 	if (mob)
 		mob:key_pressed_3()
-			
+
 /client/verb/key_pressed_4()
 	set hidden = 1
 	set name = "key-pressed-4"
 	if (mob)
 		mob:key_pressed_4()
-		
-			
+
+
 //change a mob's act-intent. Input the intent as a string such as "help" or use "right"/"left
 /mob/verb/a_intent_change(input as text)
 	set name = "a-intent"

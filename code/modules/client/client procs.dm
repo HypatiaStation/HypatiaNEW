@@ -181,6 +181,19 @@
 			src << "<span class='alert'>LOOC is Disabled</span>"
 		if(!dsay_allowed)
 			src << "<span class='alert'>Deadchat is Disabled</span>"
+	set_client_age_from_db()
+
+	if (isnum(player_age) && player_age == -1) //first connection
+		if (config.panic_bunker && !holder)
+			log_access("Failed Login: [key] - New account attempting to connect during panic bunker")
+			message_admins("<span class='adminnotice'>Failed Login: [key] - New account attempting to connect during panic bunker</span>")
+			src << "Sorry but the server is currently not accepting connections from never before seen players."
+			del(src)
+			return 0
+
+		if (config.notify_new_player_age >= 0)
+			message_admins("New user: [key_name_admin(src)] is connecting here for the first time.")
+		player_age = 0 // set it from -1 to 0 so the job selection code doesn't have a panic attack
 
 	warnings_alert()
 
@@ -203,7 +216,26 @@
 	clients -= src
 	return ..()
 
+/client/proc/set_client_age_from_db()
+	if (IsGuestKey(src.key))
+		return
 
+	establish_db_connection()
+	if(!dbcon.IsConnected())
+		return
+
+	var/sql_ckey = sql_sanitize_text(src.ckey)
+
+	var/DBQuery/query = dbcon.NewQuery("SELECT id, datediff(Now(),firstseen) as age FROM ss13_player WHERE ckey = '[sql_ckey]'")
+	if (!query.Execute())
+		return
+
+	while (query.NextRow())
+		player_age = text2num(query.item[2])
+		return
+
+	//no match mark it as a first connection for use in client/New()
+	player_age = -1
 
 /client/proc/log_client_to_db()
 

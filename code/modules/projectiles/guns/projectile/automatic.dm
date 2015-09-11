@@ -17,7 +17,7 @@
 	set category = "Object"
 
 	if (projectiles_per_shot == 3)
-		loc << "\red [src.name] is now set to single shot.."
+		loc << "\red [src.name] is now set to single shot."
 		projectiles_per_shot = 1
 		fire_cooldown = 0
 	else

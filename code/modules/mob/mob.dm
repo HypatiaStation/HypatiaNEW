@@ -259,9 +259,9 @@ var/list/slot_equipment_priority = list( \
 		if (W)
 			W.attack_self(src)
 			update_inv_r_hand()
-	
+
 	AllowedToClickAgainAfter(CLICK_CD_ACTIVATE_OBJECT) // this is probably imperceptible
-	
+
 	return
 
 /*
@@ -1101,3 +1101,29 @@ mob/proc/yank_out_object()
 			return I
 
 	return 0
+
+
+proc/add_logs(mob/target, mob/user, what_done, var/object=null, var/addition=null, var/admin=1) //Victim : Attacker : what they did : what they did it with : extra notes
+	var/list/ignore=list("shaked","CPRed","grabbed","punched")
+	if(!user)
+		return
+	if(ismob(user))
+		user.attack_log += text("\[[time_stamp()]\] <font color='red'>Has [what_done] [target.name][ismob(target) ? "([target.ckey])" : ""][object ? " with [object]" : " "][addition]</font>")
+	if(ismob(target))
+		target.attack_log += text("\[[time_stamp()]\] <font color='orange'>Has been [what_done] by [user.name][ismob(user) ? "([user.ckey])" : ""][object ? " with [object]" : " "][addition]</font>")
+	if(admin)
+		log_attack("<font color='red'>[user.name][ismob(user) ? "([user.ckey])" : ""] [what_done] [target.name][ismob(target) ? "([target.ckey])" : ""][object ? " with [object]" : " "][addition]</font>")
+	if(target.client)
+		if(what_done in ignore) return
+		if(target == user)return
+		if(!admin) return
+		msg_admin_attack("[user.name][ismob(user) ? "([user.ckey])" : ""] [what_done] [target.name][ismob(target) ? "([target.ckey])" : ""][object ? " with [object]" : " "][addition](<A HREF='?_src_=holder;adminplayerobservecoodjump=1;X=[target.x];Y=[target.y];Z=[target.z]'>JMP</a>)")
+
+/mob/proc/get_ghost(even_if_they_cant_reenter = 0)
+	if(mind)
+		for(var/mob/dead/observer/G in dead_mob_list)
+			if(G.mind == mind)
+				if(G.can_reenter_corpse || even_if_they_cant_reenter)
+					return G
+				break
+

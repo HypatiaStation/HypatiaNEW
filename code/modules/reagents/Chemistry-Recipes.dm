@@ -2313,50 +2313,6 @@ datum
 			required_reagents = list("cream" = 1, "ice" = 2, "milk" = 2)
 			result_amount = 5
 
-		rewriter
-			name = "Rewriter"
-			id = "rewriter"
-			result = "rewriter"
-			required_reagents = list("spacemountainwind" = 1, "coffee" = 1)
-			result_amount = 2
-
-		suidream
-			name = "Sui Dream"
-			id = "suidream"
-			result = "suidream"
-			required_reagents = list("space_up" = 2, "bluecuracao" = 1, "melonliquor" = 1)
-			result_amount = 4
-
-//////////////////////////SKULL'S DRUGS///////////////////////
-		philodex
-			name = "Philodexphid"
-			id = "philodex"
-			result = "philodex"
-			required_reagents = list("cryptobiolin" = 1, "impedrezene" = 1, "mercury" = 1)
-			result_amount = 2
-
-		ecye
-			name = "Ecyeipate"
-			id = "ecye"
-			result = "ecye"
-			required_reagents = list("synaptizine" = 1, "plasma" = 1)
-			result_amount = 2
-
-//////////////////////////BOOZE/DRINK EXPANSION///////////////////////
-		strawberry_daiquiri
-			name = "Strawberry Daiquiri"
-			id = "strawberry_daiquiri"
-			result = "strawberry_daiquiri"
-			required_reagents = list("limejuice" = 1, "rum" = 1, "strawberryjuice" = 1)
-			result_amount = 3
-
-		watermelon_vodka
-			name = "Watermelon Vodka"
-			id = "watermelon_vodka"
-			result = "watermelon_vodka"
-			required_reagents = list("watermelonjuice" = 1, "vodka" = 2)
-			result_amount = 3
-
 		strawberrymilkshake
 			name = "Strawberry Milkshake"
 			id = "strawberrymilkshake"
@@ -2441,23 +2397,31 @@ datum
 			required_reagents = list("potatojuice" = 1, "milkshake" = 2)
 			result_amount = 3
 
-		applemilkshake
-			name = "Apple Milkshake"
-			id = "applemilkshake"
-			result = "potatomilkshake"
-			required_reagents = list("applejuice" = 1, "milkshake" = 2)
-			result_amount = 3
+		rewriter
+			name = "Rewriter"
+			id = "rewriter"
+			result = "rewriter"
+			required_reagents = list("spacemountainwind" = 1, "coffee" = 1)
+			result_amount = 2
 
-		gingerale
-			name = "Ginger Ale"
-			id = "gingerale"
-			result = "gingerale"
-			required_reagents = list("gingerjuice" = 1, "ale" = 2)
-			result_amount = 3
+		suidream
+			name = "Sui Dream"
+			id = "suidream"
+			result = "suidream"
+			required_reagents = list("space_up" = 2, "bluecuracao" = 1, "melonliquor" = 1)
+			result_amount = 4
 
-		gingerbeer
-			name = "Ginger Beer"
-			id = "gingerbeer"
-			result = "gingerbeer"
-			required_reagents = list("gingerjuice" = 1, "beer" = 2)
-			result_amount = 3
+//////////////////////////SKULL'S DRUGS///////////////////////
+		philodex
+			name = "Philodexphid"
+			id = "philodex"
+			result = "philodex"
+			required_reagents = list("cryptobiolin" = 1, "impedrezene" = 1, "mercury" = 1)
+			result_amount = 2
+
+		ecye
+			name = "Ecyeipate"
+			id = "ecye"
+			result = "ecye"
+			required_reagents = list("synaptizine" = 1, "plasma" = 1)
+			result_amount = 2

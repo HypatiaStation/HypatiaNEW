@@ -140,22 +140,6 @@
 	filling_color = "#A2B5A1"
 	plantname = "strawberry"
 
-/obj/item/weapon/reagent_containers/food/snacks/grown/pear
-	name = "pear"
-	desc = "Don't look at them naked yoy Pear-vert."
-	icon_state = "pear"
-	potency = 25
-	filling_color = "#A2B5A1"
-	plantname = "pear"
-
-/obj/item/weapon/reagent_containers/food/snacks/grown/onion
-	name = "onion"
-	desc = "Well loved for their layers."
-	icon_state = "onion"
-	potency = 25
-	filling_color = "#A2B5A1"
-	plantname = "onion"
-
 /obj/item/weapon/reagent_containers/food/snacks/grown/ginger
 	name = "ginger"
 	desc = "The most knobbly of spices."

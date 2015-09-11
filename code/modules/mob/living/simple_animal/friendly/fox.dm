@@ -18,6 +18,10 @@
 	response_disarm = "gently pushes aside"
 	response_harm = "kicks"
 
+/mob/living/simple_animal/corgi/fox/Wex
+	name = "Wex"
+	desc = "It's a fox! Surprisingly friendly."
+
 //Captain fox
 /mob/living/simple_animal/corgi/fox/Chauncey
 	name = "Chauncey"

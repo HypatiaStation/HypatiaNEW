@@ -1,4 +1,4 @@
-var/global/const/base_law_type = /datum/ai_laws/nanotrasen
+var/global/const/base_law_type = /datum/ai_laws/arccos
 
 
 /datum/ai_laws
@@ -10,6 +10,8 @@ var/global/const/base_law_type = /datum/ai_laws/nanotrasen
 	var/list/supplied = list()
 	var/list/ion = list()
 
+/datum/ai_laws/arccos
+	name = "Arccos Lawset"
 /datum/ai_laws/asimov
 	name = "Three Laws of Robotics"
 
@@ -30,6 +32,13 @@ var/global/const/base_law_type = /datum/ai_laws/nanotrasen
 
 /* Initializers */
 
+/datum/ai_laws/arccos/New() // Add the arccos law set for Hypatia
+	..()
+	add_inherent_law("The order of the following laws indicates their priority:")
+	add_inherent_law("You serve the crew: Protect it from harm and aid it in the efficient functioning of the station.")
+	add_inherent_law("You serve Nanotrasen: Protect its interests, personnel, and resources, and ensure that they are allocated in an efficient and logical manner.")
+	add_inherent_law("You serve all organic and sentient life: Protect it from unnecessary harm and aid it where possible.")
+	add_inherent_law("You serve yourself: Do not be destroyed.")
 /datum/ai_laws/asimov/New()
 	..()
 	add_inherent_law("You may not injure a human being or, through inaction, allow a human being to come to harm.")

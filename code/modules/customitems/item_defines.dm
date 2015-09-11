@@ -1096,8 +1096,8 @@ THIS SHIT IS MISSING ITS SPRITES TOO
 	contained_sprite = 1
 
 /obj/item/clothing/head/beret/fluff/faust_beret //military beret - Bryce Faust - Hackie Mhan
-	name = "military beret"
-	desc = "This beret has the Eridani Federal Army symbol, it's old but still in good shape."
+	name = "Marine beret"
+	desc = "A green beret with an NTSC emblem. For Marines that are more inclined towards style than safety."
 	icon = 'icons/obj/custom_items/faust_beret.dmi'
 	icon_state = "faust_beret"
 	contained_sprite = 1
@@ -1148,13 +1148,13 @@ END R I P HAZERI
 		if(isliving(user))
 			user.visible_message("\red [user] invades [M]'s personal space, thrusting your [src] into their face insistently.","\red You invade [M]'s personal space, thrusting [src] into their face insistently. You are the law.")
 
-/obj/item/clothing/gloves/fluff/odanu_gloves //Old Soghun Handwraps - Odanu Adanutha - Prospekt1559
-	name = "old Soghun handwraps"
+/obj/item/clothing/gloves/fluff/odanu_gloves //Old Unathi Handwraps - Odanu Adanutha - Prospekt1559
+	name = "old Unathi handwraps"
 	desc = "Old, stained hand wraps made of cloth. Holds in a miniscule amount of warmth and offers slight protection to one's knuckles."
 	icon = 'icons/obj/custom_items/odanu_gloves.dmi'
 	icon_state = "odanu_gloves"
 	contained_sprite = 1
-	species_restricted = list("Soghun")
+	species_restricted = list("Unathi")
 	clipped = 1
 	cold_protection = HANDS
 	min_cold_protection_temperature = GLOVES_MIN_COLD_PROTECTION_TEMPERATURE
@@ -1208,6 +1208,311 @@ END R I P HAZERI
 	attack_self(mob/user as mob)
 		if(isliving(user))
 			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec], Emergency Response Team.","\red You raise [src].\nThey read: [rank] [surname] - [spec], Emergency Response Team.")
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+/obj/item/clothing/tie/marine_dogtags_adams // James Adams
+	name = "PFC. James Adams' dogtags"
+	desc = "James Adams, Private First Class, 1st Squad 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "PFC"
+	var/surname = "James Adams"
+	var/spec = "1st Squad"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_millhouse // Anderson Millhouse
+	name = "Pvt. Anderson Millhouse's' dogtags"
+	desc = "Anderson Millhouse, Private, 1st Squad 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Pvt."
+	var/surname = "Anderson Millhouse"
+	var/spec = "1st Squad"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_wolfe // Robert Wolfe
+	name = "Pvt. Robert Wolfe's dogtags"
+	desc = "Robert Wolfe, Private, 2nd Squad 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Pvt."
+	var/surname = "Robert Wolfe"
+	var/spec = "2nd Squad"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_mennai // Ezra Mennai
+	name = "Crewman Ezra Mennai's dogtags"
+	desc = "Ezra Mennai, Crewman, 2nd Squad 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Crewman"
+	var/surname = "Ezra Mennai"
+	var/spec = "2nd Squad"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_thompson // Reese Thompson
+	name = "Ensign Reese Thompson's dogtags"
+	desc = "Reese Thompson, Ensign, Pilot 1st Squadron"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Ensign"
+	var/surname = "Reese Thomspon"
+	var/spec = "Pilot"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 1st Squadron.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 1st Squadron.")
+
+/obj/item/clothing/tie/marine_dogtags_keara // Ashley keara
+	name = "Cpl. Ashley Keara's dogtags"
+	desc = "Ashley Keara, Corporal, NTSC Military Police"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Cpl."
+	var/surname = "Ashley Keara"
+	var/spec = "NTSC"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] Military Police.","\red You raise [src].\nThey read: [rank] [surname] - [spec] Military Police.")
+
+/obj/item/clothing/tie/marine_dogtags_levett // Aene Levett
+	name = "CPO Aene Levett's dogtags"
+	desc = "Aene Levett, Chief Petty Officer, Chief Corpsman 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "CPO"
+	var/surname = "Aene Levett"
+	var/spec = "Chief Corpsman"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_ottosson // Woodrossian Ottosson
+	name = "Gun. Sgt. Woodrossian Ottosson's dogtags"
+	desc = "Woodrossian Ottosson, Gunnery Sergeant, Platoon Sergeant 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Gun. Sgt."
+	var/surname = "Woodrossian Ottosson"
+	var/spec = "Platoon Sergeant"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_lawrence // Ryan St. Lawrence
+	name = "Cpl. Ryan St. Lawrence's dogtags"
+	desc = "Ryan St. Lawrence, Corporal, 1st Squad 2nd Fireteam Lead 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Cpl."
+	var/surname = "Ryan St. Lawrence"
+	var/spec = "1st Squad 2nd Fireteam Lead"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_nakamura // Ethan Nakamura
+	name = "Cpl. Ethan Nakamura's dogtags"
+	desc = "Ethan Nakamura, Corporal, 2nd Squad 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Cpl."
+	var/surname = "Ryan St. Lawrence"
+	var/spec = "2nd Squad"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_hunt // Riley Hunt
+	name = "Cpl. Riley Hunt's dogtags"
+	desc = "Riley Hunt, Corporal, 1st Squad 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Cpl."
+	var/surname = "Riley Hunt"
+	var/spec = "1st Squad"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_fox // James Fox
+	name = "Lt. James Fox's dogtags"
+	desc = "James Fox, Lieutenant, NMV-BC Manticore Research and Development"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Lt."
+	var/surname = "James Fox"
+	var/spec = "NMV-BC Manticore"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] Research and Development.","\red You raise [src].\nThey read: [rank] [surname] - [spec] Research and Development.")
+
+/obj/item/clothing/tie/marine_dogtags_anders // Seneca Anders
+	name = "Lt. Seneca Anders' dogtags"
+	desc = "Seneca Anders, Lieutenant, NMV-BC Manticore Chief Medical Officer"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Cpl."
+	var/surname = "Seneca Anders"
+	var/spec = "NMV-BC Manticore"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] Chief Medical Officer.","\red You raise [src].\nThey read: [rank] [surname] - [spec] Chief Medical Officer.")
+
+/obj/item/clothing/tie/marine_dogtags_rochette // Mirabelle Rochette
+	name = "Lt. Com. Mirabelle Rochette's dogtags"
+	desc = "Mirabelle Rochette, Lieutenant Commander, NMV-BC Manticore Weapons Officer"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Lt. Cdr."
+	var/surname = "Mirabelle Rochette"
+	var/spec = "NMV-BC Manticore"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] Weapons Officer.","\red You raise [src].\nThey read: [rank] [surname] - [spec] Weapons Officer.")
+
+/obj/item/clothing/tie/marine_dogtags_davidson // Aaron Davidson
+	name = "Pvt. Aaron Davidson's dogtags"
+	desc = "Aaron Davidson, Private, 2nd Squad 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Pvt."
+	var/surname = "Aaron Davidson"
+	var/spec = "2nd Squad"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_blackburn // Petra Blackburn
+	name = "Sgt. Petra Blackburn's dogtags"
+	desc = "Petra Blackburn, Sergeant, 1st Squad Leader 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Sgt."
+	var/surname = "Petra Blackburn"
+	var/spec = "1st Squad Leader"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_pthompson // Peter Thompson
+	name = "PFC Peter Thompson's dogtags"
+	desc = "Peter Thompson, Private First Class, 1st Squad 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "PFC"
+	var/surname = "Peter Thompson"
+	var/spec = "1st Squad"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_nash // Janette Nash
+	name = "Private Janette Nash's dogtags"
+	desc = "Janette Nash, Private, 2nd Squad 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Pvt."
+	var/surname = "Janette Nash"
+	var/spec = "2nd Squad"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_blackfire // Julius Blackfire
+	name = "2Lt. Julius Blackfire's dogtags"
+	desc = "Julius Blackfire, Second Lieutenant, Platoon Leader 3rd Platoon"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "2Lt."
+	var/surname = "Julius Blackfire"
+	var/spec = "Platoon Leader"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.","\red You raise [src].\nThey read: [rank] [surname] - [spec] 3rd Platoon.")
+
+/obj/item/clothing/tie/marine_dogtags_xanatos // Danielle Xanatos
+	name = "Cdr. Danielle Xanatos's dogtags"
+	desc = "Danielle Xanatos, Commander, NMV-BC Manticore Executive Officer"
+	icon_state = "ert_tags"
+	item_color = "holobadge-cord"
+	slot_flags = SLOT_MASK
+	slot_flags = SLOT_BELT
+	var/rank = "Cdr."
+	var/surname = "Danielle Xanatos"
+	var/spec = "Infantry Officer"
+
+	attack_self(mob/user as mob)
+		if(isliving(user))
+			user.visible_message("\red [user] raises [src].\nThey read: [rank] [surname] - [spec] Executive Officer.","\red You raise [src].\nThey read: [rank] [surname] - [spec] Executive Officer.")
+
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
 
 /obj/item/clothing/tie/fluff/scofield_watch //Hunter Scofield - Smifboy78
 	name = "gold pocket-watch"

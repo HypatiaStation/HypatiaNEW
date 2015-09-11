@@ -9,6 +9,18 @@
 	siemens_coefficient = 0.7
 	w_class = 3
 
+/obj/item/clothing/head/helmet/combat
+	name = "helmet"
+	desc = "A black generic combat helmet. Provides limited protection."
+	icon_state = "helmet"
+	flags = FPRINT | TABLEPASS | HEADCOVERSEYES | THICKMATERIAL
+	item_state = "helmet"
+	armor = list(melee = 60, bullet = 15, laser = 50,energy = 10, bomb = 25, bio = 0, rad = 0)
+	flags_inv = HIDEEARS|HIDEEYES
+	siemens_coefficient = 0.7
+	w_class = 3
+
+
 /obj/item/clothing/head/helmet/warden
 	name = "warden's hat"
 	desc = "It's a special helmet issued to the Warden of a securiy force. Protects the head from impacts."

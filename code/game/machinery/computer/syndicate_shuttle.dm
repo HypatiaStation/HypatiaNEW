@@ -54,7 +54,7 @@
 
 	var/dat = {"Location: [curr_location]<br>
 	Ready to move[max(lastMove + SYNDICATE_SHUTTLE_COOLDOWN - world.time, 0) ? " in [max(round((lastMove + SYNDICATE_SHUTTLE_COOLDOWN - world.time) * 0.1), 0)] seconds" : ": now"]<br>
-	<a href='?src=\ref[src];syndicate=1'>Syndicate Space</a><br>
+	<a href='?src=\ref[src];syndicate=1'>NMV Manticore</a><br>
 	<a href='?src=\ref[src];station_nw=1'>North West of SS13</a> |
 	<a href='?src=\ref[src];station_n=1'>North of SS13</a> |
 	<a href='?src=\ref[src];station_ne=1'>North East of SS13</a><br>
@@ -63,6 +63,7 @@
 	<a href='?src=\ref[src];station_se=1'>South East of SS13</a><br>
 	<a href='?src=\ref[src];commssat=1'>South of the Communication Satellite</a> |
 	<a href='?src=\ref[src];mining=1'>North East of the Mining Asteroid</a><br>
+	<a href='?src=\ref[src];arrivals=1'>NSS Hypatia Arrivals</a><br>
 	<a href='?src=\ref[user];mach_close=computer'>Close</a>"}
 
 	user << browse(dat, "window=computer;size=575x450")
@@ -95,6 +96,8 @@
 		syndicate_move_to(/area/syndicate_station/commssat)
 	else if(href_list["mining"])
 		syndicate_move_to(/area/syndicate_station/mining)
+	else if(href_list["arrivals"])
+		syndicate_move_to(/area/syndicate_station/arrivals)
 
 	add_fingerprint(usr)
 	updateUsrDialog()

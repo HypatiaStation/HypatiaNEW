@@ -223,12 +223,13 @@ var/global/datum/shuttle_controller/shuttle_controller
 		"South of the station" = locate(/area/syndicate_station/south),
 		"Southeast of the station" = locate(/area/syndicate_station/southeast),
 		"Telecomms Satellite" = locate(/area/syndicate_station/commssat),
+		"NSS Hypatia Arrivals" = locate(/area/syndicate_station/arrivals),
 		"Mining Asteroid" = locate(/area/syndicate_station/mining)
 		)
 
-	MS.announcer = "NSV Icarus"
-	MS.arrival_message = "Attention, Hypatia, you have a large signature approaching the station - looks unarmed to surface scans. We're too far out to intercept - brace for visitors."
-	MS.departure_message = "Your visitors are on their way out of the system, Hypatia, burning delta-v like it's nothing. Good riddance."
+	MS.announcer = "NMV Manticore Control"
+	MS.arrival_message = "Attention, NSS Hypatia, Centauri 1-3 is inbound. NMV Manticore control out."
+	MS.departure_message = "Attention, NSS Hypatia. Centauri 1-3 is departing. Have a good shift."
 	MS.interim = locate(/area/syndicate_station/transit)
 
 	MS.warmup_time = 0
